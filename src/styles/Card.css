@@ -1,0 +1,152 @@
+.card, .normal-card{
+    position: relative;
+    padding: 0px;
+    width: 30%;
+    height: 303px;
+}
+
+.card:first-child {
+    width: 760px;
+    height: 303px;
+}
+
+.card-title{
+    color: #fff;
+}
+
+.card-title::before{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #48a0dc;
+    position: absolute;
+    top: 35%;
+    transition: transform;
+    transition-delay: 4s;
+}
+
+.card:hover > .card-top-left-content > .card-title::before{
+    cursor: pointer;
+    width: 80px;
+    height: 2px;
+    transform: scale(1);
+}
+
+.card > img, .normal-card > img{
+    width: 100%;
+    height: 100%;
+}
+
+.new-properties-image{
+    width: 100%;
+    height: 303px;
+}
+
+.card-top-left-content{
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+
+.card-top-right-content > span{
+    position: absolute;
+    top: 20px;
+    right: 16px;
+}
+
+.card-bottom-left-content > span {
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+}
+
+.card-bottom-right-content > span {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+}
+
+.new-properties-content h4{
+    margin-bottom: 0px;
+}
+
+.new-properties-content p {
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+.new-properties-content li, .card-footer li {
+    list-style: none;
+}
+
+.new-properties-content ul, .card-footer ul {
+    padding-left: 0px;
+}
+
+.card-footer {
+    font-size: 14px;
+}
+
+.new-properties-card{
+    position: relative;
+}
+
+.new-properties-card .hover-content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 1px;
+    padding: 30px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.new-properties-card:hover{
+    cursor: pointer;
+}
+
+.new-properties-card:hover .hover-content{
+    width: 100%;
+    height: 303px;
+    visibility: visible;
+    opacity: 0.7; 
+}
+   
+.card-icons{
+    background-color: #48a0dc;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    bottom: 15%;
+    color: #fff;
+    font-size: 30px;
+    outline: 5px solid #fff;
+    z-index: 999;
+}
+
+.agent-cards img{
+    width: 100%;
+    height: 303px;
+}
+
+.uk-card-body .agent-content{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.uk-card-body .agent-content i {
+    font-size: 14px;
+    color: #48a0dc;
+}

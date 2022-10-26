@@ -1,0 +1,26 @@
+.slider-section{
+    height: 350px;
+}
+
+.slider-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.slider-content{
+    display: flex;
+    /* flex-direction: row; */
+    overflow-x: scroll;
+    width: 100%;
+    scroll-behavior: smooth;
+    transition: all 2s ease;
+}
+
+.slider-content::-webkit-scrollbar{
+    display: none;
+}

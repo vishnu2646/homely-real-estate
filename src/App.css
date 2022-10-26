@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.home-types-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-types-content{
+    width: 50%;
+    overflow-wrap: break-word; 
+    margin: 0 auto;
+    font-weight: 300;
+} 
+
+.new-properties-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+}
+
+.agents-section{
+    height: 60vh;
+}
+
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main-navbar ul {
+    display: flex;
+    gap: 50px;
+}
+
+.main-navbar ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.main-navbar ul li:hover{
+    color: #48A0DC;
+}
+
+.main-navbar ul button{
+    cursor: pointer;
+}
+
+.btn{
+    background-Color: #4fba6f;
+    border: 1px solid #4fba6f;
+    color:#fff;
+    padding: 0 5px;
+    border-radius: 2px
+}
+
+.contact-nav {
+    background-color: #e8ebf3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-nav ul{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.contact-nav ul li{
+    font-size: 14px;
 }

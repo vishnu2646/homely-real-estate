@@ -1,0 +1,73 @@
+.hero-content, .hero-content h1 {
+    color: #fff;
+    font-weight: 200;
+    font-size: 22px;
+}
+
+.hero-content h1 {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.hero-content ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content li {
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.555);
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .hero-content li:hover:not(.active) {
+    background-color: #fff;
+    opacity: 0.2;   
+    color: #121212;
+} */
+
+.hero-content li:hover{
+    cursor: pointer;
+}
+
+.hero-content li.active{
+    background-color: #48a0dc;
+    border: 1px solid rgba(255, 255, 255, 0.555);
+}
+
+.tab{
+    margin-top: 40px;
+}
+
+.tab li{
+    font-weight: 400;
+}
+
+.tab-form{
+    display: flex;
+}
+
+.tab-form input[type="text"]{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.tab-form input[type="text"]:focus{
+    outline: none;
+}

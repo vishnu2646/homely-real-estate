@@ -1,0 +1,36 @@
+.footer-section{
+    font-weight: 300;
+    margin-top: 20%;
+}
+
+.footer-main{
+    background-color: #323746;
+}
+
+.col{
+    width: 100%;
+}
+
+.col h5, .col h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 16px;
+    color: #fff;
+}
+
+.col p{
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.footer-main .container .col:nth-child(2) p{
+    white-space: nowrap; 
+    width: 300px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.footer-main .container .col:nth-child(3) {
+    font-size: 14px;
+}
